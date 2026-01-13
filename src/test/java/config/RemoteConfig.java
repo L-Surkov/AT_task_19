@@ -4,9 +4,9 @@ import org.aeonbits.owner.Config;
 
 @Config.Sources({
         "classpath:${prop}.properties",
-        "classpath:android.properties"
+        "classpath:remote.properties"
 })
-public interface TestConfig extends Config {
+public interface RemoteConfig extends Config {
     @Key("browserstack.user")
     String browserstackUser();
 

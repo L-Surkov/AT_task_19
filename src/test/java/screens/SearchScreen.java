@@ -1,4 +1,4 @@
-package pages;
+package screens;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
@@ -10,7 +10,7 @@ import static io.appium.java_client.AppiumBy.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class SearchPage {
+public class SearchScreen {
 
     private final String searchButton = "Search Wikipedia";
     private final String searchInputId = "org.wikipedia.alpha:id/search_src_text";

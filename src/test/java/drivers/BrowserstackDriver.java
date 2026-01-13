@@ -2,7 +2,7 @@ package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
 import config.ConfigReader;
-import config.TestConfig;
+import config.RemoteConfig;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ public class BrowserstackDriver implements WebDriverProvider {
 
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
-        TestConfig config = ConfigReader.INSTANCE.getConfig();
+        RemoteConfig config = ConfigReader.INSTANCE.getConfig();
 
         MutableCapabilities caps = new MutableCapabilities();
 
